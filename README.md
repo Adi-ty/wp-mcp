@@ -13,9 +13,7 @@ A MCP server that connects WordPress sites to AI agents. Enable Claude Desktop, 
 
 ## 🎥 Demo
 
-<!-- Screen recording will be added here -->
-
-_Coming soon: Video demonstration of WordPress management through Claude Desktop_
+[Demo Video on GitHub](https://github.com/user-attachments/assets/83780664-7924-49bd-8862-075d2f84d312)
 
 ## 🔧 Configuration
 
