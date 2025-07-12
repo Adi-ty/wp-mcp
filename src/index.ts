@@ -1,21 +1,15 @@
-import {
-  McpServer,
-  ResourceTemplate,
-} from "@modelcontextprotocol/sdk/server/mcp.js";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 
-import { registerPostTools } from "./src/tools/posts.js";
-import { registerPageTools } from "./src/tools/pages.js";
-import {
-  registerCategoryTools,
-  registerTagTools,
-} from "./src/tools/taxonomies.js";
-import { registerMediaTools } from "./src/tools/media.js";
+import { registerPostTools } from "./tools/posts.js";
+import { registerPageTools } from "./tools/pages.js";
+import { registerCategoryTools, registerTagTools } from "./tools/taxonomies.js";
+import { registerMediaTools } from "./tools/media.js";
 import {
   registerUserTools,
   registerCommentTools,
-} from "./src/tools/users-comments.js";
-import { registerSystemTools } from "./src/tools/system.js";
+} from "./tools/users-comments.js";
+import { registerSystemTools } from "./tools/system.js";
 
 const server = new McpServer({
   name: "WordPress MCP Server",

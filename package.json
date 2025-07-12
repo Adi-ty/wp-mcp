@@ -1,7 +1,31 @@
 {
-  "name": "wp-mcp",
-  "module": "index.ts",
+  "name": "@adi.lib/wp-mcp",
+  "version": "0.0.1",
+  "description": "WordPress MCP Server - Connect WordPress to AI agents via Model Context Protocol",
+  "module": "dist/index.js",
   "type": "module",
+  "bin": {
+    "wp-mcp": "bin/cli.mjs"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run src/index.ts --watch",
+    "build": "tsc"
+  },
+  "files": [
+    "dist/**/*",
+    "bin/cli.mjs",
+    "README.md"
+  ],
+  "keywords": [
+    "wordpress",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "claude",
+    "anthropic",
+    "rest-api"
+  ],
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -11,5 +35,13 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1",
     "zod": "^3.25.63"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adi-ty/wp-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adi-ty/wp-mcp/issues"
+  },
+  "homepage": "https://github.com/Adi-ty/wp-mcp#readme"
 }
