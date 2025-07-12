@@ -1,15 +1,42 @@
-# wp-mcp
+# WordPress MCP Server
 
-To install dependencies:
+[![npm version](https://badge.fury.io/js/@adi.lib%2Fwp-mcp.svg)](https://badge.fury.io/js/@adi.lib%2Fwp-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-```bash
-bun install
-```
+A MCP server that connects WordPress sites to AI agents. Enable Claude Desktop, Cursor, VS Code, and other MCP-compatible AI clients to manage your WordPress content through natural language commands.
 
-To run:
+## ✨ Features
 
-```bash
-bun run index.ts
-```
+- 🔗 **Direct WordPress Integration** - Connect to any WordPress site via REST API
+- 🛠 **Comprehensive Content Management** - Create, read, update, and delete posts, pages, taxonomies, users and media
+- 🔒 **Secure Authentication** - Uses WordPress Application Passwords
 
-This project was created using `bun init` in bun v1.1.43. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## 🎥 Demo
+
+<!-- Screen recording will be added here -->
+
+_Coming soon: Video demonstration of WordPress management through Claude Desktop_
+
+## 🔧 Configuration
+
+### Environment Variables
+
+| Variable          | Description          | Example               |
+| ----------------- | -------------------- | --------------------- |
+| `WP_BASE_URL`     | WordPress site URL   | `https://mysite.com`  |
+| `WP_USERNAME`     | WordPress username   | `admin`               |
+| `WP_APP_PASSWORD` | Application password | `abc1 def2 ghi3 jkl4` |
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Add your improvements
+4. Test thoroughly with a WordPress site
+5. Submit a pull request
+
+## 📝 License
+
+[MIT License](LICENSE)
+
+---
