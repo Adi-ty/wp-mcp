@@ -214,18 +214,6 @@ export function registerSystemTools(server: McpServer) {
     }
   );
 
-  server.tool("get_site_health", {}, async () => {
-    try {
-      const siteHealth = await wpRequest("/site-health/tests");
-      return formatSuccessResponse(
-        siteHealth,
-        `Site health information retrieved`
-      );
-    } catch (error) {
-      return formatErrorResponse(error);
-    }
-  });
-
   server.tool(
     "get_application_passwords",
     {
