@@ -1,6 +1,6 @@
 {
   "name": "@adi.lib/wp-mcp",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "WordPress MCP Server - Connect WordPress to AI agents via Model Context Protocol",
   "module": "dist/index.js",
   "type": "module",
@@ -27,7 +27,7 @@
     "rest-api"
   ],
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/node": "^24.0.15"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
