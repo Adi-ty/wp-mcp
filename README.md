@@ -15,6 +15,18 @@ A MCP server that connects WordPress sites to AI agents. Enable Claude Desktop, 
 
 [Demo Video on GitHub](https://github.com/user-attachments/assets/83780664-7924-49bd-8862-075d2f84d312)
 
+## 🚀 Installation
+
+```bash
+npm install @adi.lib/wp-mcp
+```
+
+### Requirements
+
+- Node.js v18 or higher
+- WordPress site with REST API enabled
+- WordPress Application Password
+
 ## 🔧 Configuration
 
 ### Environment Variables
@@ -24,6 +36,15 @@ A MCP server that connects WordPress sites to AI agents. Enable Claude Desktop, 
 | `WP_BASE_URL`     | WordPress site URL   | `https://mysite.com`  |
 | `WP_USERNAME`     | WordPress username   | `admin`               |
 | `WP_APP_PASSWORD` | Application password | `abc1 def2 ghi3 jkl4` |
+
+### Setup WordPress Application Password
+
+1. Go to your WordPress Admin Dashboard
+2. Navigate to **Users → Your Profile**
+3. Scroll down to **Application Passwords**
+4. Enter a name for your application (e.g., "MCP Server")
+5. Click **Add New Application Password**
+6. Copy the generated password and use it as `WP_APP_PASSWORD`
 
 ## 🤝 Contributing
 
