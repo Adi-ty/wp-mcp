@@ -147,6 +147,8 @@ export const WP_ENDPOINTS = {
   BLOCK_TYPES: "/block-types",
   PLUGINS: "/plugins",
   THEMES: "/themes",
+  BLOCK_DIRECTORY: "/block-directory",
+  BLOCK_RENDERER: "/block-renderer",
 } as const;
 
 /**

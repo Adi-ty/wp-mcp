@@ -8,8 +8,6 @@
     "wp-mcp": "bin/cli.mjs"
   },
   "scripts": {
-    "start": "bun run src/index.ts",
-    "dev": "bun run src/index.ts --watch",
     "build": "tsc"
   },
   "files": [
