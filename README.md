@@ -46,6 +46,26 @@ npm install @adi.lib/wp-mcp
 5. Click **Add New Application Password**
 6. Copy the generated password and use it as `WP_APP_PASSWORD`
 
+### Adding MCP config to your client:
+
+```json
+{
+  "servers": {
+    "wp-mcp": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@adi.lib/wp-mcp"],
+      "env": {
+        "WP_BASE_URL": "https://your-site.com",
+        "WP_USERNAME": "admin",
+        "WP_APP_PASSWORD": "abc1 def2 ghi3 jkl4"
+      }
+    }
+  }
+}
+
+```
+
 ## 🤝 Contributing
 
 1. Fork the repository
